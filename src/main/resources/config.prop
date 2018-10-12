@@ -1,0 +1,21 @@
+# Segment config
+segmentWriteKey = toto
+
+# Name of the control table in DynamoDB
+appName = se-anz-poc-domain
+
+# Source
+kinesisInputStream = se-anz-poc-domain
+
+# Your AWS region
+regionName = us-west-2
+retryLimit = 3
+
+# Flush buffer to S3 when any of these conditions is met:
+
+# 1MB = 1024*1024 = 1048576
+bufferByteSizeLimit = 1024
+# 2 hours
+bufferMillisecondsLimit = 1000
+# 10000 records
+bufferRecordCountLimit = 10
